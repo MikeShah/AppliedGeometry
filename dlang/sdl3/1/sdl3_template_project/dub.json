@@ -4,9 +4,9 @@
 	],
 	"copyright": "Copyright © 2023, mike",
 	"dependencies": {
-		"bindbc-sdl": "~>1.2.4"
+		"bindbc-sdl": "~>2.2.0"
 	},
-	"description": "Example Screensaver",
+	"description": "A minimal D application.",
 	"license": "proprietary",
-	"name": "project"
+	"name": "prog_sdl"
 }
