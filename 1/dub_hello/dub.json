@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"mike"
+	],
+	"copyright": "Copyright © 2026, mike",
+	"dependencies": {
+		"bindbc-sdl": "~>2.4.2"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "dub_hello"
+}
