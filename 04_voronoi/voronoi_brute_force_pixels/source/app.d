@@ -7,15 +7,12 @@ import std.stdio, std.string, std.math, std.random;
 import bindbc.sdl;
 import sdl_abstraction;
 
+import util;
 
 
 struct VoronoiSite{
   int x,y;
   ubyte r,g,b;
-}
-
-double distance(double x1, double y1, double x2, double y2){
-  return sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
 }
 
 /// Brute force pixel rendering of voronoi diagram
@@ -29,7 +26,7 @@ void DrawVoronoiDiagram(SDL_Renderer* renderer, VoronoiSite[] sites, int w, int 
       ulong smallestIdx;
       foreach(idx,v ; sites){
         // Compute distance between pixel and current site
-        double dist = distance(x,y, v.x, v.y);
+        double dist = Distance(x,y, v.x, v.y);
         
         if(dist < smallestDistance){
           smallestDistance = dist;

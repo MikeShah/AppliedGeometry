@@ -6,6 +6,7 @@
 	"dependencies": {
 		"bindbc-sdl": "~>2.2.0"
 	},
+  "sourcePaths":["source/","../../common/"],
 	"description": "A minimal D application.",
 	"license": "proprietary",
 	"name": "prog"
